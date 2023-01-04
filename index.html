@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clap</title>
+</head>
+<body></body>
+<script>
+  // define a função que será executada a cada intervalo
+  function mudarCor() {
+    // gera uma cor aleatória
+    var cor = "#" + Math.floor(Math.random() * 16777216).toString(16);
+
+    // altera a cor do elemento body
+    document.body.style.backgroundColor = cor;
+
+  }
+  
+
+  // define o intervalo de tempo em milissegundos (1000 milissegundos = 1 segundo)
+  var intervalo = 250;
+
+  // define o timer para executar a função a cada intervalo de tempo
+  setInterval(mudarCor, intervalo);
+  
+</script>
+</body>
+</html>
